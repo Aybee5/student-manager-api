@@ -6,7 +6,7 @@ const authRoutes = require("./routes/auth");
 const { auth } = require("./middlewares/auth");
 
 const app = express();
-const port = process.env.PORT ?? 8080;
+const port = process.env.PORT ?? 3030;
 dotenv.config();
 
 app.use(express.urlencoded({ extended: true }));
