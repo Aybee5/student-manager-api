@@ -30,7 +30,7 @@ database.schema
   .then((exists) => {
     if (!exists) {
       return database.schema
-        .createTable("books", (table) => {
+        .createTable("notes", (table) => {
           table.increments("id").primary();
           table.integer("author");
           table.string("title");
